@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simon Game </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Icons -->
+    <div id="icon-div">
+        <img src="Icons/Volume_On_Light.png" alt="Volume" class="icons">
+    </div>
+
+    <!-- Start Menu -->
+    <div id="starting-container">
+        <h1 id="title"> Simon </h1>
+        <button type="button" id="help"> ? </button>
+        <button type="button" id="start-button"> Start Game </button>
+    </div>
+
+    <!-- Instructions Menu -->
+    <div id="help-div">
+        <p> How to play:<br>
+            <br>
+            The point of this game is to match the pattern shown to you. At the start of every level,
+            a pattern will flash that you have to match. Each level will add 1 more color on to the pattern.<br>
+            If you take longer than 8 seconds to press a button when inputting a sequence, you will get game over. <br>
+            <br>
+            Good luck and have fun! :)
+        </p>
+    </div>
+
+    <!-- Game -->
+    <div id="gameplay-screen">
+        <h1 id="level-number"> Click Anywhere to Begin </h1>
+        <div class="game-container">
+            <div class="panel yellow-panel"></div>
+            <div class="panel green-panel"></div>
+            <div class="panel blue-panel"></div>
+            <div class="panel red-panel"></div>
+            <div class="center"> </div> <!-- Black circle for center of game -->
+        </div>
+    </div>
+
+    <!-- Game Over Menu -->
+    <div id="game-over-container">
+        <h1 id="game-over-title"> Game Over </h1>
+        <button type="button" id="try-again-button"> Try Again </button>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
